@@ -1,0 +1,8 @@
+<button (click) ="organizeByAmounts()">Organize by amount</button>
+<button (click) ="organizeAlphabetically()">Organize alphabetically</button>
+
+<ul>
+  <li *ngFor = "let name of names">
+    <p>{{name.name}} {{name.amount}}</p>
+  </li>
+</ul>

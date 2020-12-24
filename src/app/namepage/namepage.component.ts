@@ -5,7 +5,7 @@ import { Nameinfo } from '../models/nameinfo'
 @Component({
   selector: 'app-namepage',
   templateUrl: './namepage.component.html',
-  styleUrls: ['./namepage.component.css']
+  styleUrls: ['./namepage.component.scss']
 })
 export class NamepageComponent implements OnInit {
 

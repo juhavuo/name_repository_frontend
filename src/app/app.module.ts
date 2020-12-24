@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ConnectorService } from './connector.service';
 import { HttpClientModule } from '@angular/common/http';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { NamepageComponent } from './namepage/namepage.component';
 
@@ -13,7 +13,8 @@ import { NamepageComponent } from './namepage/namepage.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [ConnectorService],
   bootstrap: [AppComponent]

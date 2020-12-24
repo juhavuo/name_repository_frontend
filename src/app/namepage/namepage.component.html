@@ -1,8 +1,18 @@
-<button (click) ="organizeByAmounts()">Organize by amount</button>
-<button (click) ="organizeAlphabetically()">Organize alphabetically</button>
-
-<ul>
-  <li *ngFor = "let name of names">
-    <p>{{name.name}} {{name.amount}}</p>
-  </li>
-</ul>
+<div class="names_div">
+  <h1>Name popularity</h1>
+  <p>Total amount: {{totalAmount}}</p>
+  Search name
+  <input type="text" size="30" [(ngModel)]="nameToFind">
+  <button (click)="showNameInfo()">Search</button>
+  {{searchResult}}
+  <br>
+  <button (click)="organizeByAmounts()">Organize by amount</button>
+  <button (click)="organizeAlphabetically()">Organize alphabetically</button>
+  <br>
+  <p>Name: amount</p>
+  <ul>
+    <li *ngFor="let nameinfo of nameinfos">
+      <p>{{nameinfo.name}}: {{nameinfo.amount}}</p>
+    </li>
+  </ul>
+</div>
